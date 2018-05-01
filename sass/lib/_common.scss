@@ -1,0 +1,43 @@
+$mainColor: #FFAE22;
+$textColor: #9B9B9B ;
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+.hover{
+    &:hover{
+        color:$mainColor;
+    }
+}
+.navbar-custom {
+    text-transform: uppercase;
+    font-weight: bold;
+    background: none;
+    position: relative;
+    color: darken($textColor,70%);
+
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0px;
+        display: block;
+        width: 0px;
+        height: 2px;
+        background: $mainColor;
+        transition: all .3s ease;
+    }
+
+    &:hover {
+        &:after {
+            width: 100%;
+        }
+    }
+}
+.btn-custom {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    @extend .hover;
+    font-weight: bold;
+    color: $textColor;
+}

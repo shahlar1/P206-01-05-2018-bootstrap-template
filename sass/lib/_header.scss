@@ -1,0 +1,59 @@
+#header {
+    .innerSection {
+        border: 1px solid #808080;
+        color: $textColor;
+
+        .header-top {
+            padding: 10px 0px;
+            border-bottom: 1px solid $textColor;
+
+            button {
+                @extend .btn-custom;
+                margin-left: -12px;
+            }
+
+            i {
+                color: darken($textColor,30%);
+                margin-right: 10px;
+            }
+
+            span {
+                color: darken($textColor,60%);
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .header-bottom {
+            padding: 25px 0px;
+
+            .navbar {
+                margin-bottom: 0px;
+            }
+
+            nav {
+
+
+                .navbar-brand {
+                    padding: 0px;
+                }
+
+                border: none;
+
+                .nav {
+                    margin-top:15px;
+                    li {
+                        a {
+                            padding-top: 0px;
+                            padding-bottom: 0px;
+                          
+                            @extend .navbar-custom;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

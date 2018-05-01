@@ -1,0 +1,77 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.hover:hover, .btn-custom:hover, #header .innerSection .header-top button:hover {
+  color: #FFAE22;
+}
+
+.navbar-custom, #header .innerSection .header-bottom nav .nav li a {
+  text-transform: uppercase;
+  font-weight: bold;
+  background: none;
+  position: relative;
+  color: black;
+}
+.navbar-custom:after, #header .innerSection .header-bottom nav .nav li a:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #FFAE22;
+  transition: all .3s ease;
+}
+.navbar-custom:hover:after, #header .innerSection .header-bottom nav .nav li a:hover:after {
+  width: 100%;
+}
+
+.btn-custom, #header .innerSection .header-top button {
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #9B9B9B;
+}
+
+#header .innerSection {
+  border: 1px solid #808080;
+  color: #9B9B9B;
+}
+#header .innerSection .header-top {
+  padding: 10px 0px;
+  border-bottom: 1px solid #9B9B9B;
+}
+#header .innerSection .header-top button {
+  margin-left: -12px;
+}
+#header .innerSection .header-top i {
+  color: #4f4f4f;
+  margin-right: 10px;
+}
+#header .innerSection .header-top span {
+  color: #020202;
+}
+#header .innerSection .header-top span:hover {
+  text-decoration: underline;
+}
+#header .innerSection .header-bottom {
+  padding: 25px 0px;
+}
+#header .innerSection .header-bottom .navbar {
+  margin-bottom: 0px;
+}
+#header .innerSection .header-bottom nav {
+  border: none;
+}
+#header .innerSection .header-bottom nav .navbar-brand {
+  padding: 0px;
+}
+#header .innerSection .header-bottom nav .nav {
+  margin-top: 15px;
+}
+#header .innerSection .header-bottom nav .nav li a {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
